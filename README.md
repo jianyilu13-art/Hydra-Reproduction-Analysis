@@ -1,8 +1,11 @@
-# Hydra Reproduction & Code Analysis
+# Hydra Reproduction Analysis
 
 A personal learning project documenting my reproduction and analysis of the **Hydra** semantic 3D scene graph framework developed by the MIT SPARK Lab.
 
-The goal of this repository is **not** to re-implement Hydra, but to understand how it works by reproducing the official pipeline, reading the core source code, and documenting the overall system architecture and implementation.
+The goal of this repository is **not to develop a new implementation of Hydra**, but to study and understand its design through official pipeline reproduction, source code analysis, and documentation of its system architecture and implementation details.
+
+
+![Hydra RViz Visualization](results/screenshots/RViz.png)
 
 ---
 
@@ -12,6 +15,7 @@ The goal of this repository is **not** to re-implement Hydra, but to understand 
 - Understand Hydra's system architecture
 - Read and analyze the core source code
 - Learn how RGB-D observations are transformed into hierarchical scene graphs
+- Understand how Hydra, ROS 2, and RViz interact within the complete robotics perception pipeline
 - Record the complete learning and reproduction process
 
 ---
@@ -24,21 +28,64 @@ Hydra-Reproduction-Analysis/
 ├── README.md
 ├── report.md
 │
-├── docs/
-│   ├── README.md
-│   ├── hydra_architecture.md
-│   ├── code_notes.md
-│   └── experiment_plan.md
+├── configs/                         # Configuration documentation
+│   ├── system.md                    # Hardware and software environment
+│   ├── environment.md               # ROS 2 and dependency setup
+│   ├── dataset.md                   # Dataset information
+│   └── hydra_config.md              # Hydra configuration analysis
 │
-├── configs/
+├── docs/                            # Study notes and architecture analysis
+│   ├── hydra_architecture.md        # Hydra system architecture overview
+│   ├── experiment_plan.md           # Experiment roadmap
+│   └── code_notes/                  # Core source code analysis
+│       ├── hydra_ros_pipeline.md
+│       ├── ros_input_module.md
+│       ├── frontend_graph_builder.md
+│       ├── backend_module.md
+│       ├── loop_closure_module.md
+│       └── active_window_reconstruction_module.md
 │
-├── experiments/
+├── experiments/                     # Reproduction experiments
+│   │
+│   ├── 01_environment_verification/
+│   │   ├── installation_log.md
+│   │   ├── system_info.md
+│   │   ├── logs/
+│   │   └── screenshots/
+│   │
+│   ├── 02_dataset_comparison/
+│   │   └── Dataset analysis and comparison
+│   │
+│   ├── 03_configuration_analysis/
+│   │   └── Hydra parameter and configuration study
+│   │
+│   ├── 04_pipeline_verification/
+│   │   └── Complete Hydra pipeline validation
+│   │
+│   ├── 05_scene_graph_analysis/
+│   │   └── Scene graph layer and RViz visualization analysis
+│   │
+│   ├── 06_runtime_analysis/
+│   │   └── Runtime behavior and performance observations
+│   │
+│   └── 07_design_analysis/
+│       └── Hydra design and implementation analysis
 │
-├── results/
+├── results/                         # Experimental outputs
+│   ├── screenshots/                 # RViz and terminal screenshots
+│   ├── logs/                        # ROS 2 execution logs
+│   ├── graphs/                      # Generated figures
+│   └── tables/                      # Experimental data
 │
-└── scripts/
+├── scripts/                         # Helper scripts
+│   ├── build_hydra.sh               # Build Hydra workspace
+│   ├── run_hydra.sh                 # Launch Hydra pipeline
+│   ├── play_rosbag.sh               # Play dataset
+│   ├── check_status.sh              # Check ROS nodes/topics
+│   └── kill_nodes.sh                # Stop running processes
+│
+└── Hydra Paper.pdf                  # Reference paper with annotations
 ```
-
 ---
 
 ## Documentation
@@ -56,7 +103,7 @@ High-level study notes covering:
 
 ---
 
-### `docs/code_notes.md`
+### `docs/code_notes/`
 
 Notes taken while reading the core Hydra source code, including:
 
