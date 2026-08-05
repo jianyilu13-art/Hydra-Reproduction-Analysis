@@ -1,0 +1,9 @@
+[INFO] [1785941846.746900250] [rosbag2_storage]: Opened database '/home/lujianyi/datasets/uhumans2/uHumans2_office_s1_00h_v2/uHumans2_office_s1_00h_v2.db3' for READ_ONLY.
+[INFO] [1785941846.746958609] [rosbag2_player]: Set rate to 1
+[INFO] [1785941846.757962664] [rosbag2_player]: Overriding QoS profile for topic /tf_static
+[INFO] [1785941846.763435936] [rosbag2_player]: Adding keyboard callbacks.
+[INFO] [1785941846.763459751] [rosbag2_player]: Press SPACE for Pause/Resume
+[INFO] [1785941846.763464086] [rosbag2_player]: Press CURSOR_RIGHT for Play Next Message
+[INFO] [1785941846.763467555] [rosbag2_player]: Press CURSOR_UP for Increase Rate 10%
+[INFO] [1785941846.763470246] [rosbag2_player]: Press CURSOR_DOWN for Decrease Rate 10%
+[INFO] [1785941846.764699275] [rosbag2_player]: Playback until timestamp: -1

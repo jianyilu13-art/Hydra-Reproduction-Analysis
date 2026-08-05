@@ -1,0 +1,143 @@
+[INFO] [launch]: All log files can be found below /home/lujianyi/.ros/log/2026-08-05-22-57-07-547872-lujianyi-Legion-Y7000-IRX10-220244
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [hydra_ros_node-1]: process started with pid [220248]
+[INFO] [hydra_visualizer_node-2]: process started with pid [220249]
+[INFO] [rviz2-3]: process started with pid [220250]
+[INFO] [static_transform_publisher-4]: process started with pid [220251]
+[static_transform_publisher-4] [INFO] [1785941827.930611599] [world_to_map]: Spinning until stopped - publishing transform
+[static_transform_publisher-4] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-4] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-4] from 'world' to 'map'
+[hydra_ros_node-1] [INFO] [1785941828.019583951] [hydra]: [hydra_node.cpp:141] Using node settings
+[hydra_ros_node-1] ================================= RunSettings ==================================
+[hydra_ros_node-1] show_run_settings:            true (default)
+[hydra_ros_node-1] robot_id:                     0 (default)
+[hydra_ros_node-1] exit_after_clock:             false (default)
+[hydra_ros_node-1] force_shutdown:               false (default)
+[hydra_ros_node-1] paths:                        [] (default)
+[hydra_ros_node-1] config_verbosity:             1 (default)
+[hydra_ros_node-1] forward_glog_to_ros:          true (default)
+[hydra_ros_node-1] glog_level:                   0 (default)
+[hydra_ros_node-1] glog_verbosity:               0 (default)
+[hydra_ros_node-1] log_path:                     /home/lujianyi/.hydra/uhumans2
+[hydra_ros_node-1] output [LogConfig] (default):
+[hydra_ros_node-1]    overwrite:                 false (default)
+[hydra_ros_node-1]    allocate:                  true (default)
+[hydra_ros_node-1]    use_timestamp:             false (default)
+[hydra_ros_node-1]    timestamp_format:          "%Y_%m_%d-%H_%M_%S" (default)
+[hydra_ros_node-1] ================================================================================
+[hydra_ros_node-1] [INFO] [1785941828.037814189] [hydra]: [hydra_pipeline.cpp:57] [Hydra] Initialized pipeline with:
+[hydra_ros_node-1] ================================ PipelineConfig ================================
+[hydra_ros_node-1] enable_lcd:                   false (default)
+[hydra_ros_node-1] timing_disabled:              false (default)
+[hydra_ros_node-1] disable_timer_output:         true (default)
+[hydra_ros_node-1] enable_pgmo_logging:          true (default)
+[hydra_ros_node-1] default_verbosity:            1 (default)
+[hydra_ros_node-1] default_num_threads:          -1 (default)
+[hydra_ros_node-1] store_visualization_details:  false (default)
+[hydra_ros_node-1] label_names:                  [{label: 0, name: unknown},
+[hydra_ros_node-1]                                {label: 1, name: air_vent},
+[hydra_ros_node-1]                                {label: 2, name: books},
+[hydra_ros_node-1]                                {label: 3, name: floor},
+[hydra_ros_node-1]                                {label: 4, name: ceiling_light},
+[hydra_ros_node-1]                                {label: 5, name: chair},
+[hydra_ros_node-1]                                {label: 6, name: bench},
+[hydra_ros_node-1]                                {label: 7, name: couch},
+[hydra_ros_node-1]                                {label: 8, name: stairs},
+[hydra_ros_node-1]                                {label: 9, name: cabinet},
+[hydra_ros_node-1]                                {label: 10, name: computer},
+[hydra_ros_node-1]                                {label: 11, name: lamp},
+[hydra_ros_node-1]                                {label: 12, name: painting},
+[hydra_ros_node-1]                                {label: 13, name: plant},
+[hydra_ros_node-1]                                {label: 14, name: sign},
+[hydra_ros_node-1]                                {label: 15, name: stairs},
+[hydra_ros_node-1]                                {label: 16, name: desk},
+[hydra_ros_node-1]                                {label: 17, name: cubicle},
+[hydra_ros_node-1]                                {label: 18, name: trashcan},
+[hydra_ros_node-1]                                {label: 19, name: wall},
+[hydra_ros_node-1]                                {label: 20, name: human}]
+[hydra_ros_node-1] map_window [Virtual Config: SpatialWindowChecker::Config]:
+[hydra_ros_node-1]    max_radius_m:              8 (default)
+[hydra_ros_node-1] frames [FrameConfig]:
+[hydra_ros_node-1]    robot_frame:               base_link_gt
+[hydra_ros_node-1]    odom_frame:                world
+[hydra_ros_node-1]    map_frame:                 map (default)
+[hydra_ros_node-1] graph [SharedDsgInfo::Config] (default):
+[hydra_ros_node-1]    layers:                    {AGENTS: {layer: 2, partition: 0},
+[hydra_ros_node-1]                                BUILDINGS: {layer: 5, partition: 0},
+[hydra_ros_node-1]                                MESH_PLACES: {layer: 3, partition: 1},
+[hydra_ros_node-1]                                OBJECTS: {layer: 2, partition: 0},
+[hydra_ros_node-1]                                PLACES: {layer: 3, partition: 0},
+[hydra_ros_node-1]                                ROOMS: {layer: 4, partition: 0}} (default)
+[hydra_ros_node-1] label_space [LabelSpaceConfig]:
+[hydra_ros_node-1]    total_semantic_labels:     21
+[hydra_ros_node-1]    semantic_colormap_file:    "" (default)
+[hydra_ros_node-1]    semantic_label_remap_filepath:
+[hydra_ros_node-1]                               /home/lujianyi/hydra_ws/install/hydra/share/hydra/
+[hydra_ros_node-1]                               config/label_remaps/uhumans2_office.yaml
+[hydra_ros_node-1]    dynamic_labels:            [20]
+[hydra_ros_node-1]    invalid_labels:            [] (default)
+[hydra_ros_node-1]    object_labels:             [5, 6, 7, 10, 12, 13, 18]
+[hydra_ros_node-1]    surface_places_labels:     [3, 15]
+[hydra_ros_node-1]    ground_labels:             [] (default)
+[hydra_ros_node-1]    semantic_layers:           [OBJECTS, MESH_PLACES] (default)
+[hydra_ros_node-1] mesh [MeshFieldConfgi] (default):
+[hydra_ros_node-1]    with_colors:               true (default)
+[hydra_ros_node-1]    with_first_seen_stamps:    true (default)
+[hydra_ros_node-1]    with_labels:               true (default)
+[hydra_ros_node-1] ================================================================================
+[rviz2-3] [INFO] [1785941828.112986249] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1785941828.113034536] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[hydra_ros_node-1] [INFO] [1785941828.131144803] [hydra]: [hydra_ros_pipeline.cpp:83] Starting Hydra-ROS with input configuration
+[hydra_ros_node-1] ============================ RosInputModule::Config ============================
+[hydra_ros_node-1] max_receiver_queue_size:      0 (default)
+[hydra_ros_node-1] clear_queue_on_fail:          true (default)
+[hydra_ros_node-1] inputs[left_cam] [InputModule::InputPair::Config] (default):
+[hydra_ros_node-1]    receiver [Virtual Config: ClosedSetImageReceiver::Config]:
+[hydra_ros_node-1]       input_separation_s:     0 (default)
+[hydra_ros_node-1]       ns:                     "" (default)
+[hydra_ros_node-1]       queue_size:             10 (default)
+[hydra_ros_node-1]    sensor [Virtual Config: RosCamera::Config]:
+[hydra_ros_node-1]       min_range [m]:          0.1
+[hydra_ros_node-1]       max_range [m]:          5
+[hydra_ros_node-1]       ns:                     "" (default)
+[hydra_ros_node-1]       warning_timeout_s [s]:  10 (default)
+[hydra_ros_node-1]       error_timeout_s [s]:    0 (default)
+[hydra_ros_node-1]       latch_info_sub:         false (default)
+[hydra_ros_node-1]       extrinsics [Virtual Config: RosExtrinsics::Config]:
+[hydra_ros_node-1]          sensor_frame:        "" (default)
+[hydra_ros_node-1]          robot_frame:         base_link_gt
+[hydra_ros_node-1]          warning_timeout_s [s]: 10 (default)
+[hydra_ros_node-1]          error_timeout_s [s]: 0 (default)
+[hydra_ros_node-1]          wait_duration_s [s]: 0.1 (default)
+[hydra_ros_node-1]          verbosity:           3 (default)
+[hydra_ros_node-1] tf_lookup [TFLookup::Config] (default):
+[hydra_ros_node-1]    wait_duration_s:           0.1 (default)
+[hydra_ros_node-1]    buffer_size_s:             30 (default)
+[hydra_ros_node-1]    max_tries:                 5 (default)
+[hydra_ros_node-1]    verbosity:                 3 (default)
+[hydra_ros_node-1] ================================================================================
+[rviz2-3] [INFO] [1785941828.158511066] [rviz2]: Stereo is NOT SUPPORTED
+[hydra_ros_node-1] [INFO] [1785941828.177352654] [hydra]: [gvd_place_extractor.cpp:84] Downsampling TSDF when creating places!
+[hydra_ros_node-1] [INFO] [1785941828.202500813] [hydra]: [ros_sensors.cpp:76] Waiting for CameraInfo on /tesse/left_cam/camera_info to initialize sensor model
+[hydra_ros_node-1] [WARN] [1785941838.204679184] [hydra]: [ros_sensors.cpp:89] Waiting for CameraInfo on topic '/tesse/left_cam/camera_info'
+[hydra_ros_node-1] [INFO] [1785941847.108245380] [hydra]: [ros_sensors.cpp:105] Looking for sensor extrinsics 'base_link_gt_T_left_cam' via TF
+[hydra_ros_node-1] [INFO] [1785941847.420556139] [hydra]: [ros_sensors.cpp:234] Initialized camera as 
+[hydra_ros_node-1] ============================ Virtual Config: Camera ============================
+[hydra_ros_node-1] min_range [m]:                0.1
+[hydra_ros_node-1] max_range [m]:                5
+[hydra_ros_node-1] width [px]:                   720
+[hydra_ros_node-1] height [px]:                  480
+[hydra_ros_node-1] cx [px]:                      360
+[hydra_ros_node-1] cy [px]:                      240
+[hydra_ros_node-1] fx [px]:                      415.692
+[hydra_ros_node-1] fy [px]:                      415.692
+[hydra_ros_node-1] extrinsics [Virtual Config: ParamSensorExtrinsics]:
+[hydra_ros_node-1]    body_R_sensor:             {w: -0.5, x: 0.5, y: -0.5, z: 0.5}
+[hydra_ros_node-1]    body_p_sensor:             [0, 0.05, 0]
+[hydra_ros_node-1] ================================================================================
+[hydra_ros_node-1] [INFO] [1785941847.467133982] [hydra]: [input_module.cpp:81] [Hydra Input] started!
+[hydra_ros_node-1] [INFO] [1785941847.467207234] [hydra]: [active_window_module.cpp:87] [Active Window] started!
+[hydra_ros_node-1] [INFO] [1785941847.467274408] [hydra]: [backend_module.cpp:136] [Hydra Backend] started!
+[hydra_ros_node-1] [INFO] [1785941847.469486216] [hydra]: [graph_builder.cpp:167] [Hydra Frontend] started!
+[hydra_ros_node-1] [INFO] [1785941847.470475246] [hydra]: Running...
